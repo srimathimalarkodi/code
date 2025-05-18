@@ -5,47 +5,80 @@
   <title>Login Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0e0e0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
-    .login-container {
-      background: #fff;
-      padding: 20px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
+
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h2 {
+
+    .login-box h2 {
       text-align: center;
+      margin-bottom: 20px;
     }
-    input[type="text"], input[type="password"] {
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
       width: 100%;
       padding: 10px;
-      margin: 8px 0 16px;
+      margin-bottom: 15px;
+      border-radius: 5px;
       border: 1px solid #ccc;
-      border-radius: 4px;
     }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .remember input {
+      margin-right: 5px;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .forgot a {
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
     input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background: #4CAF50;
-      border: none;
+      background-color: #4CAF50;
       color: white;
-      border-radius: 4px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
+
     input[type="submit"]:hover {
-      background: #45a049;
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
 
-<div class="login-container">
+<div class="login-box">
   <h2>Login</h2>
-  <form action="/login" method="post">
-    <label for="
+  <form onsubmit="return validateForm
+
